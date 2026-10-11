@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات الإنشاءات والصيانة العامة | أبو نمر وأبو سعيد - بورسة</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            readex: ['Readex Pro', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0F172A;
+      color: #F8FAFC;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0F172A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F59E0B;
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover {
+      transition: all 0.3s ease;
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(245, 158, 11, 0.4);
+      box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.15);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+      border-color: transparent;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 md:pb-12 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-900">
+
+  <!-- Top Banner Header -->
+  <header class="relative w-full overflow-hidden bg-slate-900 border-b border-amber-500/20">
+    <div class="relative h-64 md:h-80 lg:h-96 w-full overflow-hidden">
+      <img 
+        src="https://i.ibb.co/1fkCb5xV/1791740300275.jpg" 
+        alt="خدمات الإنشاءات والصيانة العامة" 
+        class="w-full h-full object-cover object-center filter brightness-90 hover:scale-105 transition-transform duration-700"
+        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80';"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+    </div>
+
+    <!-- Title Badge Overlay -->
+    <div class="max-w-5xl mx-auto px-4 -mt-20 relative z-10 text-center">
+      <div class="glass-card rounded-3xl p-6 md:p-8 shadow-2xl border border-amber-500/30">
+        <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 rounded-full text-amber-400 text-xs md:text-sm font-bold mb-3">
+          <i class="fa-solid fa-certificate text-amber-400"></i>
+          <span>ورشة احترافية متكاملة</span>
+        </div>
+        
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-white tracking-wide leading-tight">
+          خدمات الإنشاءات والصيانة العامة
+        </h1>
+        <p class="text-amber-400 font-bold text-base md:text-xl mt-2">
+          دهان • صحية • كهرباء • سيراميك
+        </p>
+
+        <!-- Location Badge -->
+        <div class="mt-4 flex items-center justify-center gap-2 text-slate-300 text-xs md:text-sm bg-slate-800/80 w-max mx-auto px-4 py-1.5 rounded-full border border-slate-700">
+          <i class="fa-solid fa-location-dot text-amber-500"></i>
+          <span>بورسة والمناطق المجاورة</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8">
+
+    <!-- Contact Cards Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      
+      <!-- Abu Namr Card -->
+      <div class="glass-card glass-card-hover rounded-2xl p-5 border-r-4 border-r-amber-500 relative overflow-hidden">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black text-xl border border-amber-500/30">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-black text-white">أبو نمر</h2>
+              <p class="text-xs text-amber-400 font-semibold">إشراف وتنفيذ ميداني</p>
+            </div>
+          </div>
+          <span class="bg-emerald-500/10 text-emerald-400 text-[11px] font-bold px-2.5 py-1 rounded-full border border-emerald-500/20 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> متاح على الواتساب
+          </span>
+        </div>
+        
+        <a href="https://wa.me/905317327802" target="_blank" title="تواصل مباشر على الواتساب" class="group block text-slate-200 hover:text-emerald-400 text-sm ltr text-right font-mono font-bold text-lg mb-4 bg-slate-900/80 hover:bg-emerald-950/40 p-3 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition-all shadow-md">
+          <div class="flex items-center justify-between">
+            <span class="flex items-center gap-2 text-xs font-sans text-emerald-400 group-hover:underline">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>محادثة واتساب مباشرة</span>
+            </span>
+            <span class="tracking-wider">0090 531 732 78 02</span>
+          </div>
+        </a>
+
+        <div class="grid grid-cols-2 gap-2">
+          <a href="https://wa.me/905317327802" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 px-4 rounded-xl text-xs sm:text-sm transition-all shadow-lg shadow-emerald-600/20">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>واتساب مباشر</span>
+          </a>
+          <a href="tel:00905317327802" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition-all border border-amber-500/30">
+            <i class="fa-solid fa-phone"></i>
+            <span>اتصال هاتف</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Abu Said Card -->
+      <div class="glass-card glass-card-hover rounded-2xl p-5 border-r-4 border-r-cyan-500 relative overflow-hidden">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-black text-xl border border-cyan-500/30">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-black text-white">أبو سعيد</h2>
+              <p class="text-xs text-cyan-400 font-semibold">إشراف وتنفيذ ميداني</p>
+            </div>
+          </div>
+          <span class="bg-emerald-500/10 text-emerald-400 text-[11px] font-bold px-2.5 py-1 rounded-full border border-emerald-500/20 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> متاح على الواتساب
+          </span>
+        </div>
+
+        <a href="https://wa.me/905340529033" target="_blank" title="تواصل مباشر على الواتساب" class="group block text-slate-200 hover:text-emerald-400 text-sm ltr text-right font-mono font-bold text-lg mb-4 bg-slate-900/80 hover:bg-emerald-950/40 p-3 rounded-xl border border-slate-700 hover:border-emerald-500/50 transition-all shadow-md">
+          <div class="flex items-center justify-between">
+            <span class="flex items-center gap-2 text-xs font-sans text-emerald-400 group-hover:underline">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>محادثة واتساب مباشرة</span>
+            </span>
+            <span class="tracking-wider">0090 534 052 90 33</span>
+          </div>
+        </a>
+
+        <div class="grid grid-cols-2 gap-2">
+          <a href="https://wa.me/905340529033" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 px-4 rounded-xl text-xs sm:text-sm transition-all shadow-lg shadow-emerald-600/20">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>واتساب مباشر</span>
+          </a>
+          <a href="tel:00905340529033" class="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-cyan-400 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition-all border border-cyan-500/30">
+            <i class="fa-solid fa-phone"></i>
+            <span>اتصال هاتف</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Interactive Section Filter Tabs -->
+    <section class="mb-8">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-black text-amber-400 flex items-center gap-2">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>أقسام الشغل والخدمات</span>
+        </h2>
+        <span class="text-xs text-slate-400">اختر القسم للتصفح</span>
+      </div>
+
+      <!-- Navigation Tabs Container -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 pt-1 no-scrollbar">
+        <button onclick="filterCategory('all')" id="tab-all" class="tab-btn active shrink-0 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm border border-slate-700 bg-slate-800 text-slate-300 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-border-all"></i>
+          <span>جميع الأقسام</span>
+        </button>
+        <button onclick="filterCategory('paint')" id="tab-paint" class="tab-btn shrink-0 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm border border-slate-700 bg-slate-800 text-slate-300 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-paint-roller text-amber-400"></i>
+          <span>الدهان والطلاء</span>
+        </button>
+        <button onclick="filterCategory('plumb')" id="tab-plumb" class="tab-btn shrink-0 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm border border-slate-700 bg-slate-800 text-slate-300 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-faucet-drip text-cyan-400"></i>
+          <span>الصحية والسباكة</span>
+        </button>
+        <button onclick="filterCategory('elec')" id="tab-elec" class="tab-btn shrink-0 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm border border-slate-700 bg-slate-800 text-slate-300 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-bolt text-yellow-400"></i>
+          <span>الكهرباء والإنارة</span>
+        </button>
+        <button onclick="filterCategory('tile')" id="tab-tile" class="tab-btn shrink-0 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm border border-slate-700 bg-slate-800 text-slate-300 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-cubes text-emerald-400"></i>
+          <span>السيراميك والتبليط</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Detailed Services Content Sections -->
+    <div id="services-container" class="space-y-8">
+
+      <!-- 1. PAINTING SECTION -->
+      <section class="service-card glass-card rounded-3xl p-6 border border-amber-500/20 transition-all" data-category="paint">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/60 pb-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl border border-amber-500/30">
+              <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-black text-white">قسم الدهان والطلاء</h3>
+              <p class="text-xs text-amber-400 font-semibold">تشطيب وتأسيس جدران • طلاء عادي وديكوري</p>
+            </div>
+          </div>
+          <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/20 w-max">
+            تجهيز ونظافة كاملة
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <h4 class="text-sm font-bold text-slate-300 mb-2">قائمة خدمات الدهان:</h4>
+            <ul class="space-y-2.5 text-slate-300 text-xs sm:text-sm">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                <span>تنفيذ جميع أنواع الدهانات الداخلية والسطحية للشقق والمحلات والمكاتب.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                <span>تجهيز الجدران، سحب المعجون الاحترافي وصنفرة السطح للحصول على نعومة فائقة.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                <span>معالجة جذريّة لمشاكل الرطوبة والنش وتشققات الأسقف والجدران بمواد عازلة.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-amber-400 mt-1"></i>
+                <span>تغليف الأثاث والأرضيات قبل العمل مع تسليم الموقع نظيفاً تماماً.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=400&q=80" alt="دهان منازل" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=400&q=80" alt="سحب معجون" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-amber-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PLUMBING SECTION -->
+      <section class="service-card glass-card rounded-3xl p-6 border border-cyan-500/20 transition-all" data-category="plumb">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/60 pb-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl border border-cyan-500/30">
+              <i class="fa-solid fa-faucet-drip"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-black text-white">قسم الأعمال الصحية والسباكة</h3>
+              <p class="text-xs text-cyan-400 font-semibold">تأسيس شبكات • صيانة تسريبات • صيانة حمامات ومطابخ</p>
+            </div>
+          </div>
+          <span class="bg-cyan-500/10 text-cyan-400 text-xs font-bold px-3 py-1 rounded-full border border-cyan-500/20 w-max">
+            قطع متينة وتأسيس مضمون
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <h4 class="text-sm font-bold text-slate-300 mb-2">قائمة خدمات الصحية والسباكة:</h4>
+            <ul class="space-y-2.5 text-slate-300 text-xs sm:text-sm">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                <span>تأسيس وتمديد خطوط شبكات المياه الصالحة للشرب والصرف الصحي للمطابخ والحمامات.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                <span>كشف وصيانة تسريبات المياه والأعطال المخفية وإصلاحها فوراً.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                <span>تركيب وتغيير الخلاطات، الحنفيات، المغاسل، الشاور، وأطقم الحمامات الحديثة.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                <span>تمديد وصيانة خطوط الغسالات والسخانات بدقة وأمان.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="تركيب صحية" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-cyan-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=400&q=80" alt="صيانة سباكة" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-cyan-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ELECTRICAL SECTION -->
+      <section class="service-card glass-card rounded-3xl p-6 border border-yellow-500/20 transition-all" data-category="elec">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/60 pb-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center text-2xl border border-yellow-500/30">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-black text-white">قسم الأعمال الكهربائية والإنارة</h3>
+              <p class="text-xs text-yellow-400 font-semibold">تأسيس شبكات • صيانة اعطال • تركيب إنارة</p>
+            </div>
+          </div>
+          <span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-3 py-1 rounded-full border border-yellow-500/20 w-max">
+            أمان وجودة عالية
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <h4 class="text-sm font-bold text-slate-300 mb-2">قائمة خدمات الكهرباء:</h4>
+            <ul class="space-y-2.5 text-slate-300 text-xs sm:text-sm">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i>
+                <span>تأسيس وتمديد الشبكات الكهربائية الجديدة للمنازل والمحلات التجارية.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i>
+                <span>تركيب وصيانة اللوحات القواطع الرئيسية والفرعية ومحولات الأمان.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i>
+                <span>تركيب المفاتيح، الإبر، السبوت لايت، الإضاءة المخفية، والثريات بشكل مرتب.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-yellow-400 mt-1"></i>
+                <span>فحص شامل للأعطال والماس الكهربائي وإصلاحه بأعلى درجات السلامة.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80" alt="صيانة كهرباء" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-yellow-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80" alt="تركيب سبوت لايت" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-yellow-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CERAMICS SECTION -->
+      <section class="service-card glass-card rounded-3xl p-6 border border-emerald-500/20 transition-all" data-category="tile">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/60 pb-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl border border-emerald-500/30">
+              <i class="fa-solid fa-border-all"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-black text-white">قسم أعمال السيراميك والتبليط</h3>
+              <p class="text-xs text-emerald-400 font-semibold">تبليط أرضيات وجدران • بورسلين • صيانة وترويبة</p>
+            </div>
+          </div>
+          <span class="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-3 py-1 rounded-full border border-emerald-500/20 w-max">
+            توازيات وميول دقيقة
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="space-y-3">
+            <h4 class="text-sm font-bold text-slate-300 mb-2">قائمة خدمات السيراميك والتبليط:</h4>
+            <ul class="space-y-2.5 text-slate-300 text-xs sm:text-sm">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                <span>تركيب سيراميك وبورسلين الأرضيات والجدران للمطابخ والحمامات والمداخل.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                <span>ضبط التوازيات والميول بشكل دقيق لمنع تجمع المياه في الحمامات والمطابخ.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                <span>معالجة وتعبئة فواصل السيراميك (الترويبة) وتجديد التالف منها لحماية المنشأة.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                <span>تكسير وتبليط وتجديد الحمامات والمطابخ القديمة بالكامل.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3">
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="تركيب سيراميك" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-emerald-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden h-36 cursor-pointer border border-slate-700" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="تبليط بورسلين" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-transparent transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-magnifying-glass-plus text-emerald-400 text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Features Grid -->
+    <section class="mt-12 glass-card rounded-3xl p-6 md:p-8 border border-amber-500/20">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <h3 class="text-2xl font-black text-amber-400 mb-2">لماذا تختار ورشتنا؟</h3>
+        <p class="text-slate-400 text-xs sm:text-sm">نضمن لك جودة العمل، الشفافية بالأسعار، والسرعة في التنفيذ</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-3 text-lg">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white mb-1">دقة بالمواعيد</h4>
+          <p class="text-[11px] text-slate-400">التزام تام بالتسليم بفي الوقت المحدد</p>
+        </div>
+
+        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center mx-auto mb-3 text-lg">
+            <i class="fa-solid fa-broom"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white mb-1">نظافة الموقع</h4>
+          <p class="text-[11px] text-slate-400">تسليم المكان نظيفاً ومرتباً بالكامل</p>
+        </div>
+
+        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-3 text-lg">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white mb-1">أسعار منصفة</h4>
+          <p class="text-[11px] text-slate-400">أسعار منافسة ومعاينة سريعة</p>
+        </div>
+
+        <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center mx-auto mb-3 text-lg">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h4 class="font-bold text-sm text-white mb-1">إتقان وجودة</h4>
+          <p class="text-[11px] text-slate-400">خبرة طويلة في سوق العمل البورسي</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 space-y-3">
+      <p class="text-slate-300 font-bold text-sm">خدمات الإنشاءات والصيانة العامة - بورسة</p>
+      <p>أبو نمر: 00905317327802 | أبو سعيد: 00905340529033</p>
+      <p class="text-slate-600">جميع الحقوق محفوظة &copy; 2026</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action Bar -->
+  <div class="fixed bottom-0 inset-x-0 bg-slate-900/90 backdrop-blur-lg border-t border-slate-800 p-3 z-40 md:hidden">
+    <div class="grid grid-cols-2 gap-2 max-w-md mx-auto">
+      <a href="https://wa.me/905317327802" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-2.5 px-3 rounded-xl text-xs shadow-lg shadow-emerald-600/20">
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        <span>واتساب أبو نمر</span>
+      </a>
+      <a href="https://wa.me/905340529033" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-2.5 px-3 rounded-xl text-xs shadow-lg shadow-emerald-600/20">
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        <span>واتساب أبو سعيد</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-3xl w-full" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-10 left-0 text-white text-2xl hover:text-amber-400">
+        <i class="fa-solid fa-xmark"></i> إغلاق
+      </button>
+      <img id="lightbox-img" src="" alt="صورة المعرض" class="w-full max-h-[80vh] object-contain rounded-2xl border border-slate-700 shadow-2xl">
+    </div>
+  </div>
+
+  <script>
+    function filterCategory(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const tabs = document.querySelectorAll('.tab-btn');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      const activeTab = document.getElementById('tab-' + category);
+      if (activeTab) activeTab.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openLightbox(imgSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      lightboxImg.src = imgSrc;
+      lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>
